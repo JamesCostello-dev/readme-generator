@@ -1,12 +1,12 @@
 'use strict '
 
 // function to generate markdown for README
-const generateMarkdown = questions =>
-  `# ${questions.title}
+const generateMarkdown = data =>
+  `# ${data.title}
 \n\
 ## Description
 \n\
-${questions.description}
+${data.description}
 \n\
 ## Table of Contents
 \n\
@@ -17,27 +17,28 @@ ${questions.description}
 \n\
 ## Installation
 \n\
-${questions.installation}
+${data.installation}
 \n\
 ## Usage
 \n\
-${questions.usage}
+${data.usage}
 \n\
 ## Credits
 \n\
-${questions.credits}
+${data.credits}
 \n\
 ## License 
 \n\
-${questions.license}
+${data.license}
 \n\
 ## Tests
 \n\
-${questions.tests}
+${data.tests}
 \n\
 ## Questions
 \n\
-${tests}
+https://github.com/${data.questions}
+Email: ${data.email}
 `;
 
 module.exports = generateMarkdown;

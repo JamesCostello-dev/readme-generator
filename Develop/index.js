@@ -6,7 +6,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 
 // // array of questions for user
-const questions = () => {
+const data = () => {
   return inquirer
     .prompt([
       {
@@ -26,8 +26,8 @@ const questions = () => {
         type: 'input',
         name: 'description',
         message: 'Description of your project.',
-        validate: title => {
-          if (title) {
+        validate: description => {
+          if (description) {
             return true;
           } else {
             console.log('Please enter a description of your project.')
@@ -39,8 +39,8 @@ const questions = () => {
         type: 'input',
         name: 'installation',
         message: 'Install instructions.',
-        validate: title => {
-          if (title) {
+        validate: installation => {
+          if (installation) {
             return true;
           } else {
             console.log('Please enter install instructions.')
@@ -52,8 +52,8 @@ const questions = () => {
         type: 'input',
         name: 'usage',
         message: 'Usage instructions.',
-        validate: title => {
-          if (title) {
+        validate: usage => {
+          if (usage) {
             return true;
           } else {
             console.log('Enter usage cases and/or examples.')
@@ -65,8 +65,8 @@ const questions = () => {
         type: 'input',
         name: 'credits',
         message: 'List your collaborators.',
-        validate: title => {
-          if (title) {
+        validate: credits => {
+          if (credits) {
             return true;
           } else {
             console.log('Please enter all collaberators involved with this porject.')
@@ -83,7 +83,7 @@ const questions = () => {
       {
         type: 'confirm',
         name: 'confirmTest',
-        message: 'Would you like to enter some information about yourself for an "About" section?',
+        message: 'Would you like to add a tests section to your README?',
         default: true
       },
       {
@@ -94,6 +94,32 @@ const questions = () => {
           if (confirmTest) {
             return true;
           } else {
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'questions',
+        message: 'Enter your github username',
+        validate: questions => {
+          if (questions) {
+            return true;
+          } else {
+            console.log('Please enter your github username')
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email',
+        validate: email => {
+          if (email) {
+            return true;
+          } else {
+            console.log('Please enter your email')
             return false;
           }
         }
@@ -124,7 +150,7 @@ const writeToFile = data => {
 // }
 
 // // function call to initialize program
-questions()
+data()
   .then(generateMarkdown)
   .then(writeToFile)
   .catch(err => {
