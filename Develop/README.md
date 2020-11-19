@@ -1,8 +1,8 @@
-# README Generator
+# Readme Generator
 
 ## Description
 
-This application will create a markdown file called 'README.md'.  The prompts will provide direction for a 'professional' readme file.
+This application will provide promots in terminal.  Once the prompts are answered the application will create a README.md file based on user input data.
 
 ## Table of Contents
 
@@ -13,11 +13,11 @@ This application will create a markdown file called 'README.md'.  The prompts wi
 
 ## Installation
 
-Clone repo > open terminal > type node index
+git clone git@github.com:JamesCostello-dev/readme-generator.git
 
 ## Usage
 
-This application is used as a guide to creating a professional README.md.
+The application intended purpose is to create a professional README.md file.
 
 ## Credits
 
@@ -29,9 +29,10 @@ MIT License
 
 ## Tests
 
-Test the application by typing 'node index' in the terminal.
+open terminal > type 'node index' > answer prompts.
 
 ## Questions
 
 https://github.com/JamesCostello-dev
-Email: myfakeemail@mail.com
+
+Email: fakeemail@email.com

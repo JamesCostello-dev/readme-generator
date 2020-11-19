@@ -128,7 +128,7 @@ const data = () => {
 };
 
 // // function to write README file
-const writeToFile = data => {
+const writeToFile = (data, err) => {
   return new Promise((resolve, reject) => {
     fs.writeFile('./README.md', data, err => {
       if (err) {
