@@ -1,8 +1,6 @@
-// function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+'use strict '
 
-`;
-}
+// function to generate markdown for README
+const generateMarkdown = data => `# ${data.title}`;
 
 module.exports = generateMarkdown;
