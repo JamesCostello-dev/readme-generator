@@ -1,6 +1,8 @@
 'use strict';
 
 const inquirer = require('inquirer');
+const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 
 // // array of questions for user
@@ -9,23 +11,112 @@ const questions = () => {
     .prompt([
       {
         type: 'input',
-        name: 'name',
-        message: 'Title of the project',
+        name: 'title',
+        message: 'Title of the project.',
         validate: title => {
           if (title) {
             return true;
           } else {
-            console.log('Please enter title')
+            console.log('Please enter the project title.')
             return false;
           }
         }
-      }
+      },
+      {
+        type: 'input',
+        name: 'description',
+        message: 'Description of your project.',
+        validate: title => {
+          if (title) {
+            return true;
+          } else {
+            console.log('Please enter a description of your project.')
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'installation',
+        message: 'Install instructions.',
+        validate: title => {
+          if (title) {
+            return true;
+          } else {
+            console.log('Please enter install instructions.')
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'usage',
+        message: 'Usage instructions.',
+        validate: title => {
+          if (title) {
+            return true;
+          } else {
+            console.log('Enter usage cases and/or examples.')
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'credits',
+        message: 'List your collaborators.',
+        validate: title => {
+          if (title) {
+            return true;
+          } else {
+            console.log('Please enter all collaberators involved with this porject.')
+            return false;
+          }
+        }
+      },
+      {
+        type: 'checkbox',
+        name: 'license',
+        message: 'Choose a license.',
+        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+      },
+      {
+        type: 'confirm',
+        name: 'confirmTest',
+        message: 'Would you like to enter some information about yourself for an "About" section?',
+        default: true
+      },
+      {
+        type: 'input',
+        name: 'tests',
+        message: 'Provide tests for your application and provide examples on how to run them.',
+        when: ({ confirmTest }) => {
+          if (confirmTest) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+      },
     ]);
 };
 
 // // function to write README file
-// function writeToFile(fileName, data) {
-// }
+const writeToFile = data => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile('./README.md', data, err => {
+      if (err) {
+        reject(err)
+        return;
+      }
+
+      resolve({
+        ok: true,
+        message: 'File Created!'
+      });
+    });
+  });
+};
 
 // // function to initialize program
 // function init() {
@@ -33,4 +124,9 @@ const questions = () => {
 // }
 
 // // function call to initialize program
-questions();
+questions()
+  .then(generateMarkdown)
+  .then(writeToFile)
+  .catch(err => {
+    console.error(err);
+  });
