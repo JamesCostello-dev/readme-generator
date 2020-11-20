@@ -1,8 +1,8 @@
-# README Generator
+# ? Title of the project. README Generator
 
 ## Description
 
-This application streamlines the README creation process.
+? Description of your project. This application streamlines the README creation process.
 
 ## Table of Contents
 
@@ -13,28 +13,28 @@ This application streamlines the README creation process.
 
 ## Installation
 
-open terminal > type 'git clone git@github.com:JamesCostello-dev/readme-generator.git'
+? Install instructions. open terminal > type 'git clone git@github.com:JamesCostello-dev/readme-generato
 
 ## Usage
 
-open terminal > cd 'readme-generator' > node index > answer prompts > see generated README.md
+? Usage instructions. open terminal > cd 'readme-generator' > node index > answer prompts > see generate
 
-![alt text](assets/images/screenshot.png)
+![img](assets/images/screenshot.png)
 
 ## Credits
 
-James Costello
+? Provide tests for your application and provide examples on how to run them. type 'node index'
 
 ## License 
 
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://shields.io/)
+[![license](https://img.shields.io/badge/License-GPL-green.svg)](https://shields.io/)
 
 ## Tests
 
-type 'node index'
+y
 
 ## Questions
 
-[Github Profile](https://github.com/JamesCostello-dev)
+[Github Profile](https://github.com/y)
 
-Have a question?  Send an [email](fake_email123@email.com).
+Have a question?  Send an [email](y).
