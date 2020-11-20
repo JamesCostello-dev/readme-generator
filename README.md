@@ -37,4 +37,4 @@ type 'node index'
 
 [Github Profile](https://github.com/JamesCostello-dev)
 
-Have a question?  Send an [email](fake_email123@email.com).
+Have a question?  Send an email to fake_email123@email.com.
