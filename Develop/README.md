@@ -2,7 +2,7 @@
 
 ## Description
 
-This application used node.js and guides the user through prompts.  Once the prompts are answered a README.md will be generated based on users input.
+This application streamlines the README creation process.
 
 ## Table of Contents
 
@@ -13,11 +13,13 @@ This application used node.js and guides the user through prompts.  Once the pro
 
 ## Installation
 
-git clone 'git@github.com:JamesCostello-dev/readme-generator.git'
+open terminal > type 'git clone git@github.com:JamesCostello-dev/readme-generator.git'
 
 ## Usage
 
-clone rep > open directory > type 'node index' in terminal > answer prompts
+open terminal > cd 'readme-generator' > node index > answer prompts > see generated README.md
+
+![alt text](assets/images/screenshot.png)
 
 ## Credits
 
@@ -29,7 +31,7 @@ James Costello
 
 ## Tests
 
-type 'node index' in terminal
+type 'node index'
 
 ## Questions
 

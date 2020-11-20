@@ -23,6 +23,8 @@ ${data.installation}
 \n\
 ${data.usage}
 \n\
+![alt text](assets/images/screenshot.png)
+\n\
 ## Credits
 \n\
 ${data.credits}
