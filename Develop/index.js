@@ -79,10 +79,6 @@ const data = () => {
         name: 'license',
         message: 'Choose a license.',
         choices: ['GPL', 'Apache', 'MIT'],
-        default: ['Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.',
-          'A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.',
-          'A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.'
-        ],
       },
       {
         type: 'confirm',

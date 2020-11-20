@@ -1,10 +1,8 @@
-# x
-  
-  [![license](https://img.shields.io/badge/License-MIT-green.svg)](https://shields.io/)
+# README Generator
 
 ## Description
 
-x
+This application used node.js and guides the user through prompts.  Once the prompts are answered a README.md will be generated based on users input.
 
 ## Table of Contents
 
@@ -15,26 +13,26 @@ x
 
 ## Installation
 
-x
+git clone 'git@github.com:JamesCostello-dev/readme-generator.git'
 
 ## Usage
 
-x
+clone rep > open directory > type 'node index' in terminal > answer prompts
 
 ## Credits
 
-x
+James Costello
 
 ## License 
 
-undefined
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://shields.io/)
 
 ## Tests
 
-undefined
+type 'node index' in terminal
 
 ## Questions
 
-[Github Profile](https://github.com/x)
+[Github Profile](https://github.com/JamesCostello-dev)
 
-Have a question?  Send an [email](x).
+Have a question?  Send an [email](fake_email123@email.com).

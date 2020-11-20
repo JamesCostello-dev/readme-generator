@@ -3,8 +3,6 @@
 // generate markdown
 const generateMarkdown = data =>
   `# ${data.title}
-  \n\
-  [![license](https://img.shields.io/badge/License-${data.license}-green.svg)](https://shields.io/)
 \n\
 ## Description
 \n\
@@ -31,7 +29,7 @@ ${data.credits}
 \n\
 ## License 
 \n\
-${data.license.default}
+[![license](https://img.shields.io/badge/License-${data.license}-green.svg)](https://shields.io/)
 \n\
 ## Tests
 \n\
