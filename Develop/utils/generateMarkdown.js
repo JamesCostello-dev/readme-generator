@@ -23,7 +23,7 @@ ${data.installation}
 \n\
 ${data.usage}
 \n\
-![img](assets/images/screenshot.png)
+![screenshot](assets/images/screenshot.png)
 \n\
 ## Credits
 \n\
