@@ -19,7 +19,7 @@ x
 
 x
 
-![screenshot](assets/images/screenshot.png)
+![Alt text](assets/img/screenshot.jpg "README Generator")
 
 ## Credits
 
@@ -27,7 +27,7 @@ x
 
 ## License 
 
-[![license](https://img.shields.io/badge/License--green.svg)](https://shields.io/)
+[![license](https://img.shields.io/badge/License-GPL-green.svg)](https://shields.io/)
 
 ## Tests
 

@@ -23,7 +23,7 @@ ${data.installation}
 \n\
 ${data.usage}
 \n\
-![screenshot](assets/images/screenshot.png)
+![Alt text](assets/img/screenshot.jpg "README Generator")
 \n\
 ## Credits
 \n\
