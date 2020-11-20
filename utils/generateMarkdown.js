@@ -41,7 +41,7 @@ ${data.tests}
 \n\
 [Github Profile](https://github.com/${data.questions})
 \n\
-Have a question?  Send an [email](${data.email}).
+Have a question?  Send an ${data.email}.
 `;
 
 module.exports = generateMarkdown;
