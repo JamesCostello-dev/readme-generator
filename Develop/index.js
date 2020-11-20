@@ -1,11 +1,11 @@
 'use strict';
 
+
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-
-// // array of questions for user
+// questions and validation
 const data = () => {
   return inquirer
     .prompt([
@@ -78,7 +78,7 @@ const data = () => {
         type: 'checkbox',
         name: 'license',
         message: 'Choose a license.',
-        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+        choices: ['GPL', 'GPLv3', 'Apache 2.0', 'MIT'],
       },
       {
         type: 'confirm',
@@ -127,7 +127,8 @@ const data = () => {
     ]);
 };
 
-// // function to write README file
+
+// write function and resolve
 const writeToFile = (data, err) => {
   return new Promise((resolve, reject) => {
     fs.writeFile('./README.md', data, err => {
@@ -144,12 +145,8 @@ const writeToFile = (data, err) => {
   });
 };
 
-// // function to initialize program
-// function init() {
 
-// }
-
-// // function call to initialize program
+// run and callbacks
 data()
   .then(generateMarkdown)
   .then(writeToFile)

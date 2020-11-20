@@ -1,8 +1,8 @@
-# Readme Generator
+# README.md Generator
 
 ## Description
 
-This application will provide promots in terminal.  Once the prompts are answered the application will create a README.md file based on user input data.
+This application will provide guidance in the README creation process.  
 
 ## Table of Contents
 
@@ -13,11 +13,11 @@ This application will provide promots in terminal.  Once the prompts are answere
 
 ## Installation
 
-git clone git@github.com:JamesCostello-dev/readme-generator.git
+open terminal > git clone git@github.com:JamesCostello-dev/readme-generator.git
 
 ## Usage
 
-The application intended purpose is to create a professional README.md file.
+open terminal > type 'node index' > input data
 
 ## Credits
 
@@ -25,14 +25,14 @@ James Costello
 
 ## License 
 
-MIT License
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://shields.io/)
 
 ## Tests
 
-open terminal > type 'node index' > answer prompts.
+type 'node index' in terminal
 
 ## Questions
 
-https://github.com/JamesCostello-dev
+[Github Profile](https://github.com/JamesCostello-dev)
 
-Email: fakeemail@email.com
+Have a question?  Send an [email](fake_email123@email.com).

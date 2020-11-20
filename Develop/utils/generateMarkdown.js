@@ -1,6 +1,6 @@
 'use strict '
 
-// function to generate markdown for README
+// generate markdown
 const generateMarkdown = data =>
   `# ${data.title}
 \n\
@@ -29,7 +29,7 @@ ${data.credits}
 \n\
 ## License 
 \n\
-${data.license}
+[![license](https://img.shields.io/badge/License-${data.license}-green.svg)](https://shields.io/)
 \n\
 ## Tests
 \n\
@@ -37,9 +37,9 @@ ${data.tests}
 \n\
 ## Questions
 \n\
-https://github.com/${data.questions}
+[Github Profile](https://github.com/${data.questions})
 \n\
-Email: ${data.email}
+Have a question?  Send an [email](${data.email}).
 `;
 
 module.exports = generateMarkdown;
