@@ -1,8 +1,8 @@
-# README Generator
+# CMS Employee Tracker
 
 ## Description
 
-This application streamlines the README creation process.
+CMS command line application that tracks employee data and writes to mysql.
 
 ## Table of Contents
 
@@ -13,28 +13,28 @@ This application streamlines the README creation process.
 
 ## Installation
 
-open terminal > type 'git clone git@github.com:JamesCostello-dev/readme-generator.git'
+[git, express, inquirer, mysql2, mysql, nodemon, cTable]
 
 ## Usage
 
-open terminal > cd 'readme-generator' > type 'node index' > answer prompts > see generated README.md
+'scripts': {'start': 'nodemon server.js'},
 
 ![Alt text](assets/img/screenshot.jpg "README Generator")
 
 ## Credits
 
-James Costello
+JamesCostello-Dev
 
 ## License 
 
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://shields.io/)
+[![license](https://img.shields.io/badge/License--green.svg)](https://shields.io/)
 
 ## Tests
 
-type 'node index'
+undefined
 
 ## Questions
 
 [Github Profile](https://github.com/JamesCostello-dev)
 
-Have a question?  Send an email to fake_email123@email.com.
+Have a question?  Send an fake_email@email.com.
