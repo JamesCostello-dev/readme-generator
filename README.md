@@ -3,7 +3,7 @@
 
 ## Description
 
-This is a command line app that will prompt users with questions to generator a README.md.
+This is a command line app that will prompt users with questions to generate a README.md.
 
 ## Tech
 
