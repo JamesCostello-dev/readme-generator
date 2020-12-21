@@ -4,8 +4,8 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-const data = async () => {
-  await inquirer.prompt([
+const data = () => {
+  return inquirer.prompt([
     {
       type: 'input',
       name: 'title',
@@ -58,9 +58,6 @@ const data = async () => {
         }
       }
     },
-    {
-      message: 'Dont forget to add your media files!',
-    },
   ]);
 };
 
@@ -83,6 +80,6 @@ const writeToFile = (data, err) => {
 data()
   .then(generateMarkdown)
   .then(writeToFile)
-  .then(err => {
-    throw err;
+  .catch(err => {
+    if (err) throw err;
   });

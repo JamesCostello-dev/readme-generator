@@ -1,40 +1,17 @@
-# CMS Employee Tracker
+
+# README.md Generator
 
 ## Description
 
-CMS command line application that tracks employee data and writes to mysql.
+This is a command line app that will prompt users with questions to generator a README.md.
 
-## Table of Contents
+## Tech
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
-
-## Installation
-
-[git, express, inquirer, mysql2, mysql, nodemon, cTable]
-
-## Usage
-
-'scripts': {'start': 'nodemon server.js'},
-
-![Alt text](assets/img/screenshot.jpg "README Generator")
+Node, Inquirer, and Javascript
 
 ## Credits
 
-JamesCostello-Dev
+JamesCostello-dev
 
-## License 
+## Media
 
-[![license](https://img.shields.io/badge/License--green.svg)](https://shields.io/)
-
-## Tests
-
-undefined
-
-## Questions
-
-[Github Profile](https://github.com/JamesCostello-dev)
-
-Have a question?  Send an fake_email@email.com.
